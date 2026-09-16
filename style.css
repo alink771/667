@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1, h2 {
+  color: #1f4e79;
+}
+
+table, th, td {
+  border: 1px solid #999;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  background: #e8f1fa;
+}
+
+form {
+  background: #f7f9fb;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  color: #999;
+}
