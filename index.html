@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Анкета участника и расписание занятий">
+  <title>Анкета участницы – Гибадуллина Алина </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Анкета участницы</h1>
+    <p>Заполните форму ниже и посмотрите расписание.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Расписание занятий</h2>
+      <table>
+        <caption>Расписание на осенний семестр 2026 года</caption>
+        <thead>
+          <tr>
+            <th>День недели</th>
+            <th>Предмет</th>
+            <th>Преподаватель</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Понедельник</td>
+            <td>Математика</td>
+            <td>Иванова И. И.</td>
+          </tr>
+          <tr>
+            <td>Вторник</td>
+            <td>Информатика</td>
+            <td>Петров П. П.</td>
+          </tr>
+          <tr>
+            <td>Среда</td>
+            <td>Физика</td>
+            <td>Сидорова С. С.</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Всего занятий в неделю: 3</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section>
+      <h2>Анкета участника</h2>
+      <form action="#" method="get">
+        <label for="name">Имя и фамилия</label>
+        <input type="text" id="name" name="name" placeholder="Алина Гибадуллина" required>
+
+        <label for="email">Электронная почта</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label>Ваш пол</label>
+        <label><input type="radio" name="gender" value="male"> Мужской</label>
+        <label><input type="radio" name="gender" value="female" checked> Женский</label>
+
+        <label>Ваши увлечения</label>
+        <label><input type="checkbox" name="hobby" value="coding"> Программирование</label>
+        <label><input type="checkbox" name="hobby" value="sport"> Спорт</label>
+        <label><input type="checkbox" name="hobby" value="music"> Музыка</label>
+
+        <label for="direction">Направление обучения</label>
+        <select id="direction" name="direction">
+          <option value="web">Веб-разработка</option>
+          <option value="design">Веб-дизайн</option>
+          <option value="data">Анализ данных</option>
+        </select>
+
+        <label for="birthday">Дата рождения</label>
+        <input type="date" id="birthday" name="birthday">
+
+        <label for="about">Пара слов о себе</label>
+        <textarea id="about" name="about" rows="3" cols="40" placeholder="Что вас вдохновляет?"></textarea>
+
+        <button type="submit">Отправить анкету</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026, Алина Гибадуллина</p>
+  </footer>
+</body>
+</html>
